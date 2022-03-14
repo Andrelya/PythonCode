@@ -283,8 +283,6 @@ def test_in_file1(arr):
             minimum = min(arr1)
             difference = maximum - minimum
             file.write(f"\n     Середня кількість операції = {average_duration:.7e}")
-            print(f"\n\nДля ({op[index % 4]} {wo[index // 4]}):")
-            print(average_duration)
             file.write(f"\n     max     = {maximum:.7e}")
             file.write(f"\n     min     = {minimum:.7e}")
             file.write(f"\n     Різниця = {difference:.7e}")
@@ -357,6 +355,6 @@ def output2(number_generations, stop):
 
 
 stop = 1_000_000
-number_generations = 1
+number_generations = 20
 output2(number_generations, stop)
 
