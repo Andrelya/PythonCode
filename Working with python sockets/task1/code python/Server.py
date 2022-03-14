@@ -102,7 +102,7 @@ def k(dif_second, sort_client, sort_time, sort_second, s):
 
 
 def server():
-    with open('/Users/andrejlasuk/Desktop/С++/КМ1/Варік 11/команди відправлені на сервер.txt', 'w') as file: # перезаписуєм файл(опорожнюєм файл)
+    with open('шлях_до_файлу', 'w') as file: # перезаписуєм файл(опорожнюєм файл)
         pass
 
     host = '127.0.0.1'
@@ -133,7 +133,7 @@ def server():
             print("[" + addr[0] + "]=[" + str(addr[1]) + "]=[" + itsatime + "]/", end="")
             print(data.decode("utf-8"))
 
-            with open('/Users/andrejlasuk/Desktop/С++/КМ1/Варік 11/команди відправлені на сервер.txt', 'a+', encoding='utf-8') as file:
+            with open('шлях_до_файлу', 'a+', encoding='utf-8') as file:
                 """
                   запис команд кожного клієнта у файл
                 """
