@@ -268,7 +268,7 @@ def test_in_file1(arr):
         Процес запису в file.
         index --> номер елементів, які мають один і той самий тип.
     """
-    with open("qwe1.txt", "w") as file: # qwe1.txt --> файл у який записуєм результат 
+    with open("macOS1.txt", "w") as file: # qwe1.txt --> файл у який записуєм результат 
         for index in range(20):
             op = [ "+", "-", "*", "/", ]                       # операції які присутні в даній задачі
             wo = [ "int", "float", "complex", "str", "str"]    # тип кожного визова для певної операції(при кожному визові додаєм тип)
@@ -336,7 +336,7 @@ def output2(number_generations, stop):
         arr1 = []
         arr2 = []
 
-        with open("qwe2.txt", "tw"):           # створюєм пустий файл
+        with open("macOS2.txt", "tw"):           # створюєм пустий файл
             pass
         for i in range(number_generations):
             start = time.time()
